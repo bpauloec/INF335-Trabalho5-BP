@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Get some code from a GitHub repository
+                // Get code from GitHub repository and define branch 'main
                 git branch: 'main', url: 'https://github.com/bpauloec/INF335-Trabalho5-BP.git'
 
                 // Run Maven on a Unix agent.
